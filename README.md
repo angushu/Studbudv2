@@ -33,10 +33,10 @@ Following initial user research, features that would support the learning of sec
 ### Description
 The home page is intended to introduce new students to the features of the app. The design consists of some introductory text, feature cards as well as a music player.
 
-[Desktop Home](justification/desktop_home.png)
-[Mobile Home](justification/mobile_home.png)
+[Desktop Home](public/justification/desktop_home.png)
+[Mobile Home](public/justification/mobile_home.png)
 
-[Navigation](justification/navigation.png)
+[Navigation](public/justification/navigation.png)
 
 ### Iterations
 #### Music Player
@@ -55,11 +55,11 @@ The home page is intended to introduce new students to the features of the app. 
 ### Description
 The prepare section consists of a task list will then be allocated into a quadrant so that students can prioritise the way they study.
 
-[Desktop Prepare](justification/desktop_prepare.png)
-[Mobile Prepare](justification/mobile_prepare.png)
+[Desktop Prepare](public/justification/desktop_prepare.png)
+[Mobile Prepare](public/justification/mobile_prepare.png)
 
-[Desktop Prepare Open Modal](justification/desktop_prepare_modal.png)
-[Mobile Prepare Open Modal](justification/mobile_prepare_modal.png)
+[Desktop Prepare Open Modal](public/justification/desktop_prepare_modal.png)
+[Mobile Prepare Open Modal](public/justification/mobile_prepare_modal.png)
 
 ### Iterations
 #### Taskform Inputs
@@ -80,11 +80,11 @@ The prepare section consists of a task list will then be allocated into a quadra
 ### Description
 The practice section is intended to help students practice studying under exam conditions and to help them segment thier time for productive study sessions.
 
-[Desktop Stopwatch](justification/desktop_stopwatch.png)
-[Mobile Stopwatch](justification/mobile_stopwatch.png)
+[Desktop Stopwatch](public/justification/desktop_stopwatch.png)
+[Mobile Stopwatch](public/justification/mobile_stopwatch.png)
 
-[Desktop Pomodoro](justification/desktop_pomodoro.png)
-[Mobile Pomodoro](justification/mobile_pomodoro.png)
+[Desktop Pomodoro](public/justification/desktop_pomodoro.png)
+[Mobile Pomodoro](public/justification/mobile_pomodoro.png)
 
 ### Iterations
 #### Removal of the control panel
@@ -105,12 +105,12 @@ The practice section is intended to help students practice studying under exam c
 ### Description
 The revise section is intended to aid students in the recall of key concepts that they have learnt, acting as a tool for them to create acronyms and test themselves as they study.
 
-[Desktop Revise](justification/desktop_revise.png)
-[Mobile Revise](justification/mobile_revise.png)
+[Desktop Revise](public/justification/desktop_revise.png)
+[Mobile Revise](public/justification/mobile_revise.png)
 
 
-[Desktop Revise Open Modal](justification/desktop_revise_modal.png)
-[Mobile Revise Open Modal](justification/mobile_revise_modal.png)
+[Desktop Revise Open Modal](public/justification/desktop_revise_modal.png)
+[Mobile Revise Open Modal](public/justification/mobile_revise_modal.png)
 
 ### Iterations
 ### Acronym generator overhaul
