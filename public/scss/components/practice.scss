@@ -1,0 +1,347 @@
+/* Aligning the header to the left of the container */
+ç
+h2{
+  text-align:left;
+}
+
+/* Styling the switch mode button */
+
+#feature-toggle {
+  border-style: solid;
+  border-width: 4px;
+  border-radius: 1em;
+  border-color:  #69C8E5;
+  color: black;
+  background-color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em;
+  padding: 0.5rem 2rem;
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+}
+
+  #feature-toggle:hover {
+    background-color: #69C8E5;
+    color: black;
+  }
+
+  /* Styling container for the stopwatch time face */
+
+.watch {
+  text-align: center;
+  background-color: white;
+  width: 100%;
+  border-style: solid;
+  border-width: 6px;
+  border-radius: 3em;
+  border-color:  #69C8E5;
+  max-width: 50vw;
+  margin: 2em auto;
+  padding: 2rem 2rem;
+  border-radius: 1rem;
+  color:#4380B8;
+
+  .time {
+    font-size: 8rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+
+
+  /* Styling the stowatch controls */
+
+  .controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    button {
+      appearance: none;
+      background: none;
+      border: none;
+      outline: none;
+      user-select: none;
+
+      color: white;
+
+      font-size: 1.5rem;
+      margin: 2 1rem;
+      padding: 2 2rem;
+      border-radius: 0.5rem;
+
+      transition: 0.4s;
+    }
+
+    #start-stopwatch {
+      background-color: #89AF1D
+    }
+
+    #stop-stopwatch {
+      background-color: #CF1F89
+    }
+
+    #reset-stopwatch {
+      background-color: #4380B8;
+    }
+
+    button:hover {
+      opacity: 0.7;
+    }
+
+    button:active {
+      background-color: black;
+    }
+  }
+}
+
+#stopwatch-container {
+  margin-top:2em;
+  background-color: white;
+  width: 85vw;
+  height: 65vh;
+  display: block;
+  border: 6px solid #69C8E5;
+  border-radius: 2em;
+}
+
+#pomodoro-container {
+  margin-top:2em;
+  background-color: white;
+  width: 85vw;
+  height: 65vh;
+  display: none;
+  border: 6px solid #69C8E5;
+  border-radius: 2em;
+
+}
+
+  /* Styling the pomodoro */
+
+#pomodoro {
+  justify-content: center;
+  align-content: center;
+  display: flex;
+}
+  /* Styling the pomodoro buttons */
+
+.pomodoro-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em;
+
+  button {
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+    user-select: none;
+    color: white;
+
+    font-size: 1.5rem;
+    margin: 2 1rem;
+    padding: 2 2rem;
+    border-radius: 0.5rem;
+
+    transition: 0.4s;
+  }
+
+  #start-pomodoro {
+    background-color: #89AF1D
+  }
+
+    #pause-pomodoro {
+      background-color: #CF1F89
+    }
+
+    #reset-pomodoro {
+      background-color: #4380B8;
+    }
+
+    button:hover {
+      opacity: 0.7;
+    }
+
+    button:active {
+      background-color: black;
+    }
+  }
+
+   /* Styling the pomodoro timer clockface */
+
+
+  .base-pomodoro {
+    position: relative;
+    width: 300px;
+    height: 300px;
+  }
+  
+  .base-pomodoro__svg {
+    transform: scaleX(-1);
+  }
+  
+  .base-pomodoro__circle {
+    fill: none;
+    stroke: none;
+  }
+  
+  .base-pomodoro__time-elapsed {
+    stroke-width: 7px;
+    stroke: grey;
+  }
+  
+  .base-pomodoro__time-remaining {
+    stroke-width: 7px;
+    stroke-linecap: round;
+    transform: rotate(90deg);
+    transform-origin: center;
+    transition: 1s linear all;
+    fill-rule: nonzero;
+    stroke: currentColor;
+  }
+  
+  .base-pomodoro__time-remaining.blue {
+    color: #4380B8;
+  }
+  
+  .base-pomodoro__time-remaining.pink {
+    color: #CF1F89;
+  }
+  
+  .base-pomodoro__time-remaining.orange {
+    color: #FFBD00;
+  }
+  
+  .pomodoro-timer__label {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+  }
+
+   /* Styling the page for mobile functionality, which includes some slight changes to layout,
+   in particular shrinking the features to fit a mobile layout
+    as well as the removal of a heading.
+ */
+  @media only screen and (max-width: 600px) {
+  .feature-2-container {
+    display: flex;
+    flex-direction: column;
+    h1 {
+      font-size: 1.5em;
+    }
+    h2 {
+      font-size: 1.5em;
+      margin-top: 0.5em;
+      text-align: center;
+    }
+    p {
+      font-size: 1em;
+    }
+    nav.vertical {
+      min-height: 100%;
+      position: fixed; /* Make it stick, even on scroll */
+      overflow: auto; /* Enable scrolling if the sidenav has too much content */
+    }
+  }
+    .practice-container {
+      margin:0;
+      h1 {
+        display: none;
+      }
+      #feature-toggle {
+        width: 180px;
+        border:3px solid #69c8e5;
+        border-radius: 1em;
+        padding: 0.5rem 1rem;
+    }
+    #stopwatch-container {
+      width: 65vw;
+      height: 40vh;
+      background-color: #fff;
+      border: 3px solid #69c8e5;
+      border-radius: 2em;
+      margin-left: 0.5em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .watch {
+    color: #4380b8;
+    background-color: #fff;
+    border: none;
+    border-radius: 1rem;
+    margin: 0em auto;
+    padding: 0rem 0rem;
+
+}
+.watch .time {
+  margin-bottom: 0.5rem;
+  font-size: 2.75rem;
+  font-weight: 300;
+  text-align: center;
+}
+.watch .controls button {
+  color: #fff;
+  background: none;
+  border: none;
+  border-radius: 0.5rem;
+  outline: none;
+  margin: 0.5rem 0.5rem;
+  padding: 2px 0.5rem;
+  font-size: 1rem;
+  transition: all .4s;
+}
+#pomodoro-container {
+  width: 65vw;
+  height: 50vh;
+  border: 3px solid #69c8e5;
+  border-radius: 2em;
+  margin-left: 0.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+}
+
+.pomodoro-buttons {
+  justify-content: center;
+  align-items: center;
+  margin-top: -3em;
+  display: flex;
+}
+
+.pomodoro-timer {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+.pomodoro-timer__label {
+  width: 145px;
+  height: 145px;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  display: flex;
+  position: absolute;
+  top: 0;
+}
+
+.pomodoro-buttons button {
+  border-radius: 0.5rem;
+  outline: none;
+  margin: 0.5rem 0.4rem;
+  padding: 2px 0.5rem;
+  font-size: 1rem;
+  margin-top:-7em;
+}
+    }
+  }
+
+

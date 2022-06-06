@@ -1,0 +1,58 @@
+nav {
+    width: 100%;
+    background-color: #E0F69F;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .nav-links {
+        list-style: none;
+        display: flex;
+        .nav-item a {
+            display: inline-block;
+            text-decoration: none;
+            color: #40413F;
+            padding: 1em 2em;
+            &:hover {
+                color: #abc;
+            }
+            &.active {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+nav.vertical {
+    width: 8em;
+    height: 100vh;
+    flex-direction: row;
+    position: absolute;
+    left: 0;
+    top: 0;
+    .nav-links {
+        flex-direction: column;
+        .nav-item a {
+            display: block;
+            padding: 4em 0;
+            
+        }
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+    nav {
+      display: flex;
+      max-width: 25vw;
+      min-height: 100%;
+      background-color: #E0F69F;
+
+        .nav-links{
+            height: 100%;
+            position: fixed; /* Make it stick, even on scroll */
+            overflow: auto; /* Enable scrolling if the sidenav has too much content */
+            background-color: #E0F69F;
+            padding: 2em;
+        }
+}
+}

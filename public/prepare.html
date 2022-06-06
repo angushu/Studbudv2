@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Studbud</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="main.scss" />
+
+    <!--Providing Links to favicon pictures-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon/favicon-16x16.png"
+    />
+
+    <!--Providing Links to fonts used-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Handlee&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+<!-- Setting up the nav for the website, intended to always appear on the LHS-->
+<nav class="vertical">
+  <ul class="nav-links">
+    <li class="nav-item"><a href="index.html">Home</a></li>
+    <li class="nav-item"><a href="prepare.html" class="active">Prepare</a></li>
+    <li class="nav-item"><a href="practice.html">Practice</a></li>
+    <li class="nav-item"><a href="revise.html">Revise</a></li>
+  </ul>
+</nav>
+
+  <body class="feature-1-container">
+
+<!-- Created a banner to house the Stubud brand and logo-->
+
+    <div class="banner">
+      <img
+        class="studbud-logo"
+        src="favicon/favicon-32x32.png"
+        alt="studbud-logo"
+      />
+      <h1>Studbud</h1>
+    </div>
+
+<!-- Created a container to house the task innput function and the covey quadrants-->
+
+    <div id="prepare" class="prepare-container">
+      <h1>Prepare</h1>
+      <div id="prepare-content">
+
+<!-- Created a container to house the task innput function and different inputs-->
+        <div id="task-creator" class="sub-page-container">
+          <h2>Create a Task</h2>
+          <form id="taskform">
+            <label for="task">Task:</label>
+            <input type="text" name="task" id="taskInput" />
+            <br />
+            <!-- Date Input -->
+            <label for="dueDate"> Due Date:</label>
+            <input type="date" name="dueDate" id="dueDateInput" />
+            <br />
+            <!-- Priority -->
+            <label for="priority">Task Priority:</label>
+            <select name="priority" id="priorityInput">
+              <option value="">Select one</option>
+              <option value="Low">Low</option>
+              <option value="High">High</option>
+            </select>
+            <br />
+            <!-- Time Input -->
+            <label for="estimatedTime"
+              >Completion time (in mins):</label
+            >
+            <input type="number" name="estimatedTime" id="estimatedTimeInput" />
+            <br />
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+  
+<!-- Created a container to house covey quadrants-->
+        <div id="covey-quadrant" class="sub-page-container">
+          <div id= tasklist>
+
+          </div>
+          <div id="quad-1" class="quadrant">
+            <h2>Proritise </h2>
+            <p>These tasks are most important but take more time </p>
+          </div>
+          <div id="quad-2" class="quadrant">
+            <h2>Schedule</h2>
+            <p>These tasks are important but take less time </p>
+          </div>
+          <div id="quad-3" class="quadrant">
+            <h2>Plan</h2>
+            <p>These tasks are less important but take more time </p>
+          </div>
+          <div id="quad-4" class="quadrant">
+            <h2>For Another Time</h2>
+            <p>These tasks are least important but take less time </p>
+          </div>
+        </div>
+<!-- Created a modal pop up for tasks that the student wants to view in more detail-->
+        <div id="task-modal" class="modal">
+          <div id="modal-content">
+            <span id="close">&times;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./components/prepare.js"></script>
+  </body>
+</html>

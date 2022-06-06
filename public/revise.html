@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Studbud</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="main.scss" />
+
+    <!--Providing Links to favicon pictures-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon/favicon-16x16.png"
+    />
+
+    <!--Providing Links to fonts used-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Handlee&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+<!-- Setting up the nav for the website, intended to always appear on the LHS-->
+<nav class="vertical">
+  <ul class="nav-links">
+    <li class="nav-item"><a href="index.html" class="active">Home</a></li>
+    <li class="nav-item"><a href="prepare.html">Prepare</a></li>
+    <li class="nav-item"><a href="practice.html">Practice</a></li>
+    <li class="nav-item"><a href="revise.html">Revise</a></li>
+  </ul>
+</nav>
+
+  <body class="feature-3-container">
+
+<!-- Created a banner to house the Stubud brand and logo-->
+    <div class="banner">
+      <img
+        class="studbud-logo"
+        src="favicon/favicon-32x32.png"
+        alt="studbud-logo"
+      />
+      <h1>Studbud</h1>
+    </div>
+<!--The revise section contains the acronym generator, in which the student will input a phrase and
+the result section which will display the output acronym-->
+  
+    <div id="revise" class="revise-container">
+      <h1 id = "revise-title">Revise</h1>
+      <div id= "acronym-maker">
+        <div id = "interaction-section">
+        <h1> Acronym Generator </h1>
+        <div id="revise-input">
+          <label>Type in a phrase:</label>
+          <input type = "text" id = "phrase"/>
+          <input type="button" id="clicker" value="Generate!"/>
+        </div>
+        </div>
+          <div id = "result-section">
+            <h2> Saved Acronyms </h2>
+              <div id="result"></div>
+        </div>
+      </div>
+
+<!--The modal pop up is for the student if they want to revise the full phrase that they inputted 
+into the acronym generator -->
+      <div id="task-modal" class="modal">
+        <div id="modal-content">
+          <span id="close">&times;</span>
+        </div>
+      </div>
+    </div>
+
+<script type = "module" src="script.js"></script>
+</body>
+</html>

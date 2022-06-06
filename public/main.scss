@@ -1,0 +1,12 @@
+// Linking all relevant SCSS style sheets for each of the pages and overall styling 
+// (reset, layout and typography)
+
+@import 'public/scss/reset';
+@import 'public/scss/layout';
+@import 'public/scss/typography';
+@import 'public/scss/components/navigation';
+@import 'public/scss/components/prepare';
+@import 'public/scss/components/practice';
+@import 'public/scss/components/home';
+@import 'public/scss/components/revise';
+

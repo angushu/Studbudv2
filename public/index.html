@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Studbud</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="main.scss" />
+
+    <!--Providing Links to favicon pictures-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon/favicon-16x16.png"
+    />
+
+    <!--Providing Links to fonts used-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Handlee&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+<!-- Setting up the nav for the website, intended to always appear on the LHS-->
+<nav class="vertical">
+  <ul class="nav-links">
+    <li class="nav-item"><a href="index.html" class="active">Home</a></li>
+    <li class="nav-item"><a href="prepare.html">Prepare</a></li>
+    <li class="nav-item"><a href="practice.html">Practice</a></li>
+    <li class="nav-item"><a href="revise.html">Revise</a></li>
+  </ul>
+</nav>
+
+  <body class="index-container">
+
+<!-- Created a banner to house the Stubud brand and logo-->
+    <div class="banner">
+      <img
+        class="studbud-logo"
+        src="favicon/favicon-32x32.png"
+        alt="studbud-logo"
+      />
+      <h1>Studbud</h1>
+    </div>
+
+<!-- The home section includes a brief intoduction into the study app. It also contains the music player
+and a means of navigating to each of the features of the app-->
+
+
+<!-- This is a welcome message for new users of the Studbud App-->
+
+    <div id="home" class="home-container">
+      <div class="home-content">
+        <div id="main-text">
+          <h1>Welcome</h1>
+          <p>
+            The Studbud app is your ideal study partner. We understand that
+            learning how to study effectively is challenging, which is why we
+            intend to help you master it. Use the Prepare tool to organise your
+            tasks, the Practice tool to study under timed conditions and the
+            Revise tool to create acronyms to help you memorise concepts.
+          </p>
+        </div>
+
+<!-- This is the feature card component of the home page. Each "card" acts as another
+link to the other features of the Studbud App-->
+
+        <div class="feature-cards">
+          <div class="feature-container">
+            <div class="prepare-card">
+              <a href="prepare.html">
+                <img
+                  class="home-image"
+                  src="images/prepare.svg"
+                  alt="clipboard"
+                />
+                <h2>Prepare</h2>
+              </a>
+            </div>
+          </div>
+          <div class="feature-container">
+            <div class="practice-card">
+              <a href="practice.html">
+                <img class="home-image" src="images/practice.svg" alt="clock" />
+                <h2>Practice</h2>
+              </a>
+            </div>
+          </div>
+          <div class="feature-container">
+            <div class="revise-card">
+              <a href="revise.html">
+                <img class="home-image" src="images/revise.svg" alt="notepad" />
+                <h2>Revise</h2>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- The music player utilises functionality from Spotify, which allows you to embed chosen
+      music through an iframe-->
+      
+      <div id="music-player">
+        <h1>Mellow Out</h1>
+        <p>The album of this week is Mood Valiant by Hiatus Kaiyote, a jazz/funk band based in Melbourne.
+          Enjoy the silky sounds of this group as they take you and your study on a sonic journey.
+        </p>
+        <iframe style="border-radius:12px" 
+        src="https://open.spotify.com/embed/album/456WeVeZk38VJuqg2sL7QG?utm_source=generator" 
+        width="400" height="400" frameBorder="0" 
+        allowfullscreen="" 
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+        </iframe>
+      </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
