@@ -1,0 +1,22 @@
+{
+  "name": "studbudv2",
+  "version": "1.0.0",
+  "description": "This is my second attempt to create a new repository with a properly working git.ignore file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angushu/Studbudv2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/angushu/Studbudv2/issues"
+  },
+  "homepage": "https://github.com/angushu/Studbudv2#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
